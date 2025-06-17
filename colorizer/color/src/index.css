@@ -1,0 +1,135 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.upload-box {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px dashed #ff6f91;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #ff3f6c;
+  background-color: #fff0f5;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.preview, .result {
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 111, 145, 0.4);
+  max-width: 100%;
+  max-height: 400px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+button {
+  background-color: #ff3f6c;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #e0335b;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+}
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.images-row > div {
+  width: 256px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.images-row img {
+  width: 256px;
+  height: 256px;
+  object-fit: cover; /* או contain – לפי איך אתה רוצה שהחיתוך ייראה */
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.images-row h3 {
+  margin: 10px 0 0 0;
+  font-weight: 600;
+  color: #555;
+}

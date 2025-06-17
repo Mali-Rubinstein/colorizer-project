@@ -1,0 +1,52 @@
+# ----------------------------
+# Python related ignores
+# ----------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folder (venv)
+venv/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# ----------------------------
+# PyCharm related ignores
+# ----------------------------
+.idea/
+*.iml
+
+# ----------------------------
+# VS Code related ignores
+# ----------------------------
+
+.vscode/
+
+# ----------------------------
+# Node / React related ignores
+# ----------------------------
+
+# Node modules (React dependencies)
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------
+# OS generated files
+# ----------------------------
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,129 @@
+/* כללי גוף הדף */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* מיכל ראשי */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 1200px; /* הגדלה נוספת */
+  width: 95%;         /* קצת יותר מרווח ברזולוציות קטנות */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+/* כותרות */
+h1 {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* טקסט רגיל */
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* תיבת העלאה */
+.upload-box {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px dashed #ff6f91;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #ff3f6c;
+  background-color: #fff0f5;
+}
+
+/* שדה קלט קבצים */
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+/* תצוגות תמונות (תצוגה מקדימה ותוצאה) */
+.preview, .result {
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 111, 145, 0.4);
+  max-width: 100%;
+  max-height: 400px;
+}
+
+/* תמונות */
+img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* סינון צבעים שחור-לבן */
+.grayscale {
+  filter: grayscale(100%);
+}
+
+/* כפתורים */
+button {
+  background-color: #ff3f6c;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  margin-top: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #e0335b;
+}
+
+.images-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* רווח בין התמונות */
+  margin-top: 40px;
+  flex-wrap: nowrap; /* תמנע מעבר לשורה חדשה */
+  overflow-x: auto; /* אם אין מקום במסך, תאפשר גלילה אופקית */
+}
+
+.images-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-row img {
+  width: 300px; /* אפשר לשנות לפי הצורך */
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

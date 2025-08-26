@@ -36,11 +36,11 @@ Preprocessing pipeline converts RGB images to Lab color space for model training
 
 3. Server (Python – Flask)
 
-Built in Python using Flask .
+Built in Python using Flask.
 
 Loads the trained model and returns a colorized image when a grayscale image is sent.
 
-4. Client (React )
+4. Client (React)
 
 Graphical user interface built with React.
 
